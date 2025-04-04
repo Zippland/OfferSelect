@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  color-scheme: light only; /* 强制使用浅色主题 */
 }
 
 @theme inline {
@@ -12,10 +13,11 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/* 禁用系统夜间模式 */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff; /* 保持为浅色背景 */
+    --foreground: #171717; /* 保持为深色文字 */
   }
 }
 
@@ -23,6 +25,18 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  /* 禁用系统强制颜色 */
+  forced-color-adjust: none;
+  -webkit-forced-color-adjust: none;
+}
+
+/* 确保所有卡片和文字不受夜间模式影响 */
+.bg-white {
+  background-color: #ffffff !important;
+  color: inherit !important;
+}
+.text-gray-700, .text-gray-600, .text-gray-500, .text-xs {
+  color: inherit !important;
 }
 
 /* 自定义动画 */
