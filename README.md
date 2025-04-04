@@ -9,6 +9,8 @@
 <img src="https://img.shields.io/badge/TypeScript-5.x-3178C6" alt="TypeScript"/>
 
 ### 🚀 一站式求职Offer比较工具，让您的职业选择更明智 
+
+**[⚡ Try it now ⚡](https://offerselect.zippland.com)**
 </div>
 
 ## 📋 概述
