@@ -443,7 +443,7 @@ const JobComparisonChinese = () => {
         <p className="mt-1">* wlb = 工作与生活平衡</p>
         {screenshotMode && (
           <div className="mt-2 flex justify-center">
-            <div className="text-[8px] text-gray-300">
+            <div className="text-[8px] text-gray-400">
               OfferSelect.zippland.com
             </div>
           </div>
