@@ -39,6 +39,14 @@ body {
   color: inherit !important;
 }
 
+/* 截图模式样式 */
+@media print, (min-width: 768px) {
+  .light-mode-only.screenshot-mode {
+    min-width: 720px !important;
+    width: 720px !important;
+  }
+}
+
 /* 自定义动画 */
 @keyframes fadeIn {
   from { opacity: 0; }

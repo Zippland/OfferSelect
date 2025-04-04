@@ -39,6 +39,23 @@ const JobComparisonChinese = () => {
     loadData();
   }, []);
 
+  // 切换截图模式时，在html元素上添加或移除screenshot-mode类
+  useEffect(() => {
+    if (typeof document !== 'undefined') {
+      if (screenshotMode) {
+        document.documentElement.classList.add('screenshot-mode');
+      } else {
+        document.documentElement.classList.remove('screenshot-mode');
+      }
+    }
+    
+    return () => {
+      if (typeof document !== 'undefined') {
+        document.documentElement.classList.remove('screenshot-mode');
+      }
+    };
+  }, [screenshotMode]);
+
   // 保存更改到本地存储
   const handleSaveJobs = (updatedJobs: Job[]) => {
     setJobs(updatedJobs);
@@ -167,6 +184,14 @@ const JobComparisonChinese = () => {
     return '';
   };
 
+  // 计算截图模式下的容器宽度
+  const getContainerClassName = () => {
+    if (screenshotMode) {
+      return "w-full md:w-[720px] mx-auto bg-gray-50 p-4 rounded-lg font-sans relative";
+    }
+    return "w-full max-w-md mx-auto bg-gray-50 p-4 rounded-lg font-sans relative";
+  };
+
   // 如果正在编辑个人履历，显示个人履历编辑器
   if (isEditingProfile && profile) {
     return (
@@ -206,7 +231,7 @@ const JobComparisonChinese = () => {
   }
 
   return (
-    <div className="w-full max-w-md mx-auto bg-gray-50 p-4 rounded-lg font-sans relative">
+    <div className={getContainerClassName()}>
       {/* 页面标题和截图模式按钮 */}
       <div className="flex justify-between items-center mb-3">
         <div className="text-xs text-gray-500 tracking-wide font-medium">
@@ -316,7 +341,7 @@ const JobComparisonChinese = () => {
 
       {/* Main Grid */}
       {sortedJobs.length > 0 && (
-        <div className="grid grid-cols-2 gap-2">
+        <div className={`grid ${screenshotMode ? 'grid-cols-3' : 'grid-cols-2'} gap-2`}>
           {sortedJobs.map((job, index) => (
             <div 
               key={index} 
