@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { Job, generateRandomColor } from '../utils/jobStorage';
-import { DollarSign, Clock, MapPin, Gift, Shield, ThumbsUp, ThumbsDown, RefreshCw, X, Info, Check, Palette } from 'lucide-react';
+import { RefreshCw, X, Info, Check, Palette } from 'lucide-react';
 
 interface JobFormProps {
   job?: Job;

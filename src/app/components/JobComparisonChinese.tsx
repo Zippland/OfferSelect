@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { DollarSign, Clock, MapPin, Gift, Home, ThumbsUp, ThumbsDown, Plus, Edit, Trash2, RotateCcw, X, Camera, Eye } from 'lucide-react';
 import { Job, getJobs, saveJobs, resetToDefault } from '../utils/jobStorage';
-import { getProfile, saveProfile, resetProfileToDefault, Profile } from '../utils/profileStorage';
+import { getProfile, saveProfile, Profile } from '../utils/profileStorage';
 import JobForm from './JobForm';
 import ProfileEditor from './ProfileEditor';
 import ProfileDisplay from './ProfileDisplay';
