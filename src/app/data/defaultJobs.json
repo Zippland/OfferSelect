@@ -1,0 +1,36 @@
+[
+    {
+      "company": "示例 Offer 1",
+      "monthlyBase": "(N+8)",
+      "monthsPerYear": "15",
+      "otherBonuses": "1w",
+      "salaryRating": 5,
+      "benefits": "免费三餐、房补",
+      "insurance": "12%",
+      "workHours": "互联网高强度",
+      "wlbRating": 1,
+      "location": "一线城市",
+      "pros": "给得最多",
+      "cons": "强度大，容易被优化",
+      "color": "#4285F4",
+      "borderColor": "#2a75f3",
+      "rejected": false
+    },
+    {
+      "company": "示例 Offer 2",
+      "monthlyBase": "(N+4.5)",
+      "monthsPerYear": "13",
+      "otherBonuses": "5w",
+      "salaryRating": 4,
+      "benefits": "标准外企福利",
+      "insurance": "12%",
+      "workHours": "8h工作制、每周wfh2天",
+      "wlbRating": 4,
+      "location": "一线城市",
+      "pros": "wlb、行业第一、海外机会",
+      "cons": "跳槽比较难",
+      "color": "#0F9D58",
+      "borderColor": "#0a8c4a",
+      "rejected": true
+    }
+  ] 
