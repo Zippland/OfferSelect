@@ -9,7 +9,7 @@ export interface Profile {
 
 // 默认的个人履历数据
 const defaultProfile: Profile = {
-  title: "校招Offer求帮选（七卡瓦）",
+  title: "校招Offer求帮选（示例标题）",
   background: "9本海硕",
   major: "计算机科班",
   experience: "7段实习"

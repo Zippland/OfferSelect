@@ -74,7 +74,7 @@ const ProfileEditor: React.FC<ProfileEditorProps> = ({ profile, onSave, onCancel
             value={formData.title}
             onChange={handleChange}
             className="block w-full text-sm rounded-md border-gray-300 shadow-sm px-3 py-2 border focus:ring-1 focus:ring-blue-500 focus:border-blue-500 outline-none transition-shadow"
-            placeholder="例如：校招Offer求帮选（七卡瓦）"
+            placeholder="例如：校招Offer求帮选（示例标题）"
             maxLength={25}
           />
           <div className="flex justify-end mt-0.5">
